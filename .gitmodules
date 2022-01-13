@@ -1,0 +1,8 @@
+[submodule "PowerProfile"]
+	path = PowerProfile
+	url = git@github.com:PowerProfile/PowerProfile.git
+	branch = main
+[submodule "PowerProfile.Commands"]
+	path = PowerProfile.Commands
+	url = git@github.com:PowerProfile/PowerProfile.Commands.git
+	branch = main
