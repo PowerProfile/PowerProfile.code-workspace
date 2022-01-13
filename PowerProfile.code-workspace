@@ -1,0 +1,72 @@
+{
+    "folders": [
+        {
+            "path": "PowerProfile/PowerProfile"
+        },
+        {
+            "path": "PowerProfile.Commands/PowerProfile.Commands"
+        },
+        {
+            "name": "Website (Docusaurus)",
+            "path": "powerprofile.sh"
+        },
+        {
+            "name": "Workspace",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.autoSave": "afterDelay",
+        "powershell.enableProfileLoading": false,
+        "terminal.integrated.defaultProfile.osx": "pwsh",
+        "terminal.integrated.tabs.hideCondition": "never",
+        "window.autoDetectColorScheme": true,
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.preferredLightColorTheme": "PowerShell ISE",
+        "workbench.colorTheme": "PowerShell ISE"
+    },
+    "extensions": {
+        "recommendations": [
+          "github.vscode-pull-request-github",
+          "esbenp.prettier-vscode",
+          "davidanson.vscode-markdownlint",
+          "yzhang.markdown-all-in-one",
+          "editorconfig.editorconfig",
+          "vscode-icons-team.vscode-icons",
+          "donjayamanne.githistory"
+        ]
+    },
+    "launch": {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+          {
+            "name": "PowerShell: Launch Current File",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "cwd": "${file}"
+          },
+          {
+            "name": "PowerShell: Attach to Host Process",
+            "type": "PowerShell",
+            "request": "attach",
+            "runspaceId": 1
+          },
+          {
+            "name": "PowerShell: Interactive Session",
+            "type": "PowerShell",
+            "request": "launch",
+            "cwd": ""
+          },
+          {
+            "type": "node",
+            "request": "attach",
+            "name": "Docker: Attach to Node",
+            "remoteRoot": "/usr/src/app"
+          }
+        ]
+    }
+}
